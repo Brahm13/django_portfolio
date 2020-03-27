@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2$s)scli9ex=3=gl1j2(#m4)y@28p%7f&^ogxw3brtv+r@dv+k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['datbrahm.herokuapp.com','127.0.0.1']
 
@@ -130,7 +130,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-try:
-    from local_settings import *
-except ImportError:
-    pass
+# try:
+#     from local_settings import *
+# except ImportError:
+#     pass
